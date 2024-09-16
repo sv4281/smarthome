@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Manage Rooms</h1>
+
+    <div>
+        <button onclick="loadRooms()">Load Rooms</button>
+    </div>
+
+    <div id="roomSection">
+        <h2>Rooms</h2>
+        <div id="rooms"></div>
+    </div>
+
+    <div>
+        <h2>Add New Room</h2>
+        <input type="text" id="roomName" placeholder="Room Name">
+        <input type="text" id="roomLocation" placeholder="Location">
+        <button onclick="addRoom()">Add Room</button>
+    </div>
+
+    <div>
+        <h2>Delete Room</h2>
+        <input type="number" id="deleteRoomId" placeholder="Room ID">
+        <button onclick="deleteRoom()">Delete Room</button>
+    </div>
+
+    <div>
+        <h2>Update Room</h2>
+        <input type="number" id="updateRoomId" placeholder="Room ID">
+        <input type="text" id="updateRoomName" placeholder="New Room Name">
+        <input type="text" id="updateRoomLocation" placeholder="New Location">
+        <button onclick="updateRoom()">Update Room</button>
+    </div>
+
+    <script src="rooms.js"></script>
+</body>
+
+</html>

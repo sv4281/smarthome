@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Device States</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Manage Device States</h1>
+
+    <div>
+        <button onclick="loadDeviceStates()">Load Device States</button>
+    </div>
+
+    <div id="deviceStateSection">
+        <h2>Device States</h2>
+        <div id="device_states"></div>
+    </div>
+
+    <div>
+        <h2>Add New Device State</h2>
+        <input type="number" id="deviceStateDeviceId" placeholder="Device ID">
+        <input type="text" id="deviceStateState" placeholder="State (On/Off)">
+        <input type="datetime-local" id="deviceStateTimestamp" placeholder="Timestamp">
+        <button onclick="addDeviceState()">Add Device State</button>
+    </div>
+
+    <div>
+        <h2>Delete Device State</h2>
+        <input type="number" id="deleteDeviceStateId" placeholder="Device State ID">
+        <button onclick="deleteDeviceState()">Delete Device State</button>
+    </div>
+
+    <div>
+        <h2>Update Device State</h2>
+        <input type="number" id="updateDeviceStateId" placeholder="Device State ID">
+        <input type="number" id="updateDeviceStateDeviceId" placeholder="New Device ID">
+        <input type="text" id="updateDeviceStateState" placeholder="New State (On/Off)">
+        <input type="datetime-local" id="updateDeviceStateTimestamp" placeholder="New Timestamp">
+        <button onclick="updateDeviceState()">Update Device State</button>
+    </div>
+
+    <script src="device_states.js"></script>
+</body>
+
+</html>

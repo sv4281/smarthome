@@ -1,0 +1,75 @@
+/* General body and button styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: indigo;
+    color: bisque;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Container for all data */
+#users,
+#devices,
+#rooms,
+#schedules,
+#device_states {
+    margin: 20px 0;
+}
+
+/* Styling for each individual data item */
+.data-item {
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Add spacing to the section titles */
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+/* Style for the fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

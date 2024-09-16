@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <h1>Smart Home Dashboard</h1>
+
+    <div>
+        <h2>Manage Other Data</h2>
+        <a href="rooms.html"><button>Manage Rooms</button></a>
+        <a href="schedules.html"><button>Manage Schedules</button></a>
+        <a href="device_states.html"><button>Manage Device States</button></a>
+    </div>
+
+
+    <div>
+        <button onclick="loadUsers()">Load Users</button>
+        <button onclick="loadDevices()">Load Devices</button>
+
+    </div>
+
+    <div id="userSection">
+        <h2>Users</h2>
+        <div id="users"></div>
+    </div>
+
+    <div id="deviceSection">
+        <h2>Devices</h2>
+        <div id="devices"></div>
+    </div>
+
+
+    <div>
+        <h2>Add New Device</h2>
+        <input type="text" id="deviceName" placeholder="Device Name">
+        <input type="text" id="deviceType" placeholder="Device Type">
+        <input type="text" id="deviceLocation" placeholder="Device Location">
+        <button onclick="addDevice()">Add Device</button>
+    </div>
+
+    <div>
+        <h2>Delete Device</h2>
+        <input type="number" id="deleteDeviceId" placeholder="Device ID">
+        <button onclick="deleteDevice()">Delete Device</button>
+    </div>
+
+    <div>
+        <h2>Update Device</h2>
+        <input type="number" id="updateDeviceId" placeholder="Device ID">
+        <input type="text" id="updateDeviceName" placeholder="New Device Name">
+        <input type="text" id="updateDeviceType" placeholder="New Device Type">
+        <input type="text" id="updateDeviceLocation" placeholder="New Device Location">
+        <button onclick="updateDevice()">Update Device</button>
+    </div>
+
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>

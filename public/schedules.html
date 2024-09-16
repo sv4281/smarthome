@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Schedules</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Manage Schedules</h1>
+
+    <div>
+        <button onclick="loadSchedules()">Load Schedules</button>
+    </div>
+
+    <div id="scheduleSection">
+        <h2>Schedules</h2>
+        <div id="schedules"></div>
+    </div>
+
+    <div>
+        <h2>Add New Schedule</h2>
+        <input type="number" id="scheduleDeviceId" placeholder="Device ID">
+        <input type="time" id="scheduleStartTime" placeholder="Start Time">
+        <input type="time" id="scheduleEndTime" placeholder="End Time">
+        <input type="text" id="scheduleDays" placeholder="Days of Week">
+        <button onclick="addSchedule()">Add Schedule</button>
+    </div>
+
+    <div>
+        <h2>Delete Schedule</h2>
+        <input type="number" id="deleteScheduleId" placeholder="Schedule ID">
+        <button onclick="deleteSchedule()">Delete Schedule</button>
+    </div>
+
+    <div>
+        <h2>Update Schedule</h2>
+        <input type="number" id="updateScheduleId" placeholder="Schedule ID">
+        <input type="number" id="updateScheduleDeviceId" placeholder="New Device ID">
+        <input type="time" id="updateScheduleStartTime" placeholder="New Start Time">
+        <input type="time" id="updateScheduleEndTime" placeholder="New End Time">
+        <input type="text" id="updateScheduleDays" placeholder="New Days of Week">
+        <button onclick="updateSchedule()">Update Schedule</button>
+    </div>
+
+    <script src="schedules.js"></script>
+</body>
+
+</html>
